@@ -1,0 +1,42 @@
+OOP Lab Assignment
+
+Part C
+
+How many classes did you create?
+Answer: 1 class the Student class.
+
+How many objects did you create?
+Answer: 2 objects $student1 and $student2
+
+
+Part D
+
+Does echo $account1->balance; work?
+Answer: No.
+
+Why?
+Answer: The balance property is declared as private inside the BankAccount class
+Private properties can only be accessed from inside the same class
+Accessing it from outside the class causes an error
+
+
+Part F
+
+Question 1: Which class is the parent class
+Answer: person
+
+Question 2: Which class is the child class?
+Answer: StudentWithInheritance
+
+Question 3: Which keyword creates the inheritance relationship
+Answer: extends
+
+Question 4: The introduce() method was written inside which class
+Answer: Person
+
+Question 5: Can the $student3 object call introduce()?
+Answer: Yes
+
+Question 6: Why can $student3 use introduce() even though it is not written inside the StudentWithInheritance class?
+Answer: Because StudentWithInheritance inherits from Person using the extends keyword
+This means it can use the public methods from the Person class
