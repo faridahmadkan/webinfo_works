@@ -26,7 +26,7 @@ $name = "Ahmad";
 //combining vriables and text
 echo "my name is" . $name . "and I am" . $age . "years old";
 //also
-echo "my name is $name and I am $age years old"
+echo "my name is $name and I am $age years old";
 
 //arithmathics
 $a = 10;
@@ -51,16 +51,16 @@ echo $a % $b;
 <= less than or eual to
 */
 $age = 23;
-if ($age < 1) {
-    echo "Baby or newborn";
-} elseif ($age > 1) {
-    echo "Child";
-} elseif ($age > 6) {
-    echo "school student";
-} elseif ($age > 18) {
-    echo "Adult";
-} else {
+if ($age < 0) {
     echo "invalid age";
+} elseif ($age <= 1) {
+    echo "Baby or newborn";
+} elseif ($age <= 6) {
+    echo "Child";
+} elseif ($age <= 18) {
+    echo "school student";
+} else {
+    echo "Adult";
 }
 
 /* combining conditions
@@ -68,8 +68,8 @@ if ($age < 1) {
 || or
 ! not 
 */
-$clor = "black"
-$size = "43"
+$color = "black";
+$size = "43";
 if ($color == "black" && $size == "43") {
     echo "this shoes fits your condition";
 } else {
@@ -79,36 +79,61 @@ if ($color == "black" && $size == "43") {
 //Loops in PHP
 //for loop
 for ($i = 1; $i <= 10; $i++) {
-    echo $i . <br>;
+    echo $i . "<br>";
 }
 //while loop
 $j = 1;
-while ($j <= 10;) {
-    echo $j . <br>;
-    $i++;
+while ($j <= 10) {
+    echo $j . "<br>";
+    $j++;
 }
 //foreach loop
-$names = ['Ali', 'Omer', 'Wali', 'Ahmad', 'Shah']
+$names = ['Ali', 'Omer', 'Wali', 'Ahmad', 'Shah'];
 foreach ($names as $nm) {
-    echo $nm . <br>;
+    echo $nm . "<br>";
 }
 
 
-for ($i = 1; $i <= 10; i++;) {
-    echo $i . <br>;
+for ($i = 1; $i <= 10; $i++) {
+    echo $i . "<br>";
 }
 
-for ($i = 2; $i <= 4; i += 2; ) {
-    echo $i . <br>
+for ($i = 2; $i <= 4; $i += 2) {
+    echo $i . "<br>";
 }
 
 $name = "Farid";
 $j = 1;
-while ($j <= 5;) {
-    echo $name;
+while ($j <= 5) {
+    echo $name . "<br>";
     $j++;
 }
 
 
+//OOP PHP
+class Student {
+    public string $name;
+    public int $id;
+    public function showinfo(){
+        echo $this->name . "<br>";
+        echo $this->id . "<br>";
+    }
+}
 
+$student1 = new Student();
+$student1->name = "Ali";
+$student1->id = 1;
+$student1->showinfo();
 
+class Day1 {
+    public string $name;
+    public int $age;
+    public float $num;
+    public function __construct($name, int $age, float $num) {
+        echo $name . "<br>";
+        echo $age . "<br>";
+        echo $num;
+    }
+}
+
+$day1 = new Day1("Farid", 23, 12.5);
