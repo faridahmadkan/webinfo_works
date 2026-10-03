@@ -125,6 +125,7 @@ $student1->name = "Ali";
 $student1->id = 1;
 $student1->showinfo();
 
+//constractor is a special method that is automatically called when an object is created
 class Day1 {
     public string $name;
     public int $age;
