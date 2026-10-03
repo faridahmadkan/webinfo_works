@@ -131,9 +131,9 @@ class Day1 {
     public int $age;
     public float $num;
     public function __construct($name, int $age, float $num) {
-        echo $this->$name . "<br>";
-        echo $this->$age . "<br>";
-        echo $this->$num;
+        echo $name . "<br>";
+        echo $age . "<br>";
+        echo $num;
     }
 }
 
