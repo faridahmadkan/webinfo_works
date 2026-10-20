@@ -29,16 +29,16 @@ echo "my name is" . $name . "and I am" . $age . "years old";
 echo "my name is $name and I am $age years old"
 
 //arithmathics
-$a = 10;
-$b = 5;
-//addition
-echo $a + $b;
-//subtraction
-echo $a - $b;
-//division
-echo $a / $b;
-//remainder
-echo $a % $b;
+// $a = 10;
+// $b = 5;
+// //addition
+// echo $a + $b;
+// //subtraction
+// echo $a - $b;
+// //division
+// echo $a / $b;
+// //remainder
+// echo $a % $b;
 
 //Conditions in PHP: if else elseif
 /* comparison operators:
@@ -108,6 +108,10 @@ while ($j <= 5;) {
     echo $name;
     $j++;
 }
+
+
+
+?>
 
 
 
