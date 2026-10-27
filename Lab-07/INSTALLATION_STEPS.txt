@@ -1,0 +1,24 @@
+BOOK REGISTRATION AND VIEWING - QUICK STEPS
+
+1. Back up your existing Laravel authentication project.
+2. Copy Book.php to app/Models/Book.php.
+3. Copy BookController.php to app/Http/Controllers/BookController.php.
+4. Copy the migration to database/migrations/.
+5. Merge routes/web.php.example into routes/web.php:
+   - Add the BookController import.
+   - Replace the old /dashboard route inside the auth group.
+   - Add POST /books named books.store.
+   - Keep existing login and logout routes.
+6. Open your existing dashboard Blade view (often resources/views/dashboard.blade.php).
+7. Copy dashboard-books-section.blade.php into the existing dashboard view.
+   Bootstrap CSS must already be loaded in that view/layout.
+8. Check .env has the correct XAMPP MySQL database name, username, and password.
+9. Run:
+   php artisan migrate
+   php artisan route:list
+   php artisan serve
+10. Log in and test:
+    Learning PHP / Sara Ahmad / 120
+    Laravel Basics / Ali Hassan / 180
+
+The user ID is taken from auth()->id(), never from a form field. The book list is filtered to the logged-in user's ID.
